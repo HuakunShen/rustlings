@@ -5,11 +5,12 @@
 // Execute `rustlings hint lifetimes3` or use the `hint` watch subcommand for a
 // hint.
 
-// I AM NOT DONE
 
-struct Book {
-    author: &str,
-    title: &str,
+// This means that the lifetime of the references stored in the author and title fields 
+// of a Book instance must not exceed the lifetime of the Book instance itself.
+struct Book<'a> {
+    author: &'a str,
+    title: &'a str,
 }
 
 fn main() {
