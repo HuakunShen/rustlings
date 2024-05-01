@@ -6,8 +6,6 @@
 
 Greetings and welcome to `rustlings`. This project contains small exercises to get you used to reading and writing Rust code. This includes reading and responding to compiler messages!
 
-_...looking for the old, web-based version of Rustlings? Try [here](https://github.com/rust-lang/rustlings/tree/rustlings-1)_
-
 Alternatively, for a first-time Rust learner, there are several other resources:
 
 - [The Book](https://doc.rust-lang.org/book/index.html) - The most comprehensive resource for learning Rust, but a bit theoretical sometimes. You will be using this along with Rustlings!
@@ -76,13 +74,13 @@ If you get a permission denied message, you might have to exclude the directory 
 
 ## Manually
 
-Basically: Clone the repository at the latest tag, run `cargo install --path .`.
+Basically: Clone the repository at the latest tag, run `cargo install --locked --path .`.
 
 ```bash
 # find out the latest version at https://github.com/rust-lang/rustlings/releases/latest (on edit 5.6.1)
 git clone -b 5.6.1 --depth 1 https://github.com/rust-lang/rustlings
 cd rustlings
-cargo install --force --path .
+cargo install --locked --force --path .
 ```
 
 If there are installation errors, ensure that your toolchain is up to date. For the latest, run:
@@ -153,8 +151,6 @@ Run the command `rustlings lsp` which will generate a `rust-project.json` at the
 ## Continuing On
 
 Once you've completed Rustlings, put your new knowledge to good use! Continue practicing your Rust skills by building your own projects, contributing to Rustlings, or finding other open-source projects to contribute to.
-
-On [CodeCrafters](https://codecrafters.io/rust) you can get some quality practice through recreating different technologies from scratch in Rust (e.g Build your own BitTorrent, HTTP Server, SQLite, etc).
 
 ## Uninstalling Rustlings
 
